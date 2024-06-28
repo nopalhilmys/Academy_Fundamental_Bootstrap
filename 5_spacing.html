@@ -7,36 +7,42 @@
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     </head>
     <body>
-        <!-- implementasi m-all mx- ms me my, padding juga sama.. tapi dijelaskan saja.. kemudaian gap -->
-        <!-- contoh flexbox -->
-        <!-- flex juga bisa responsive, mksdnya bisa dipadu padan dengan breakpoints -->
-        <header class="header">
+        <!-- Contoh spacing pada bootstrap-->
+        <!-- 
+            Padding dan margin
+            p = padding
+            m = margin
+
+            Contoh : 
+            p-3 = semua (top, left, bottom, right) ber-padding 3.
+            pt- = padding top.
+            pb- = padding bottom.
+            ps- = padding start (right).
+            pe- = padding end (left).
+            py- = padding top dan bottom.
+            px- = padding start (right) dan end (left)
+
+            padding dan margin juga mendukung breakpoint.
+            Contoh py-md-3 : top dan bottom akan per-padding 3 saat diakses di px medium.
+        -->
+        <!-- Referensi : https://getbootstrap.com/docs/5.3/utilities/spacing/ -->
+        <!--------------------------------------------------------------------->
+        <header class="header vh-100">
             <div class="d-flex flex-column justify-content-center align-items-center h-100">
                 <h2>Hello world</h2>
                 <h1>Naufal Farras Hilmy</h1>
             </div>
         </header>
 
-        <!-- contoh display -->
-        <!-- kombinasi display -->
-        <section id="stats">
-            <div class="container">
-                <div class="row text-bg-danger d-none d-md-block">
-                    <div class="col-12">Ini hanya muncul px medium keatas</div>
-                </div>
-                <div class="row text-bg-warning d-block d-md-none">
-                    <div class="col-12">Ini hanya muncul px extra small - medium</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about">
+        <!-- 1. Contoh penggunaan padding di bootsrap-->
+        <!-- Contoh disini, masing-masing section akan ber-padding top-bottom 5 -->
+        <section id="about" class="py-5">
             <div class="container">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum soluta itaque maiores nulla fugiat reiciendis, ullam ipsa tempore ducimus libero at, enim ex, molestiae aut? Illum sapiente blanditiis numquam neque ipsum architecto excepturi vero beatae repudiandae necessitatibus minus, doloremque ab ea placeat et eveniet laboriosam provident saepe. Nemo blanditiis alias, ex expedita in molestias a nihil. Quidem voluptates tempore sunt deserunt adipisci labore ea aliquam quam, sint, quod eos illum nisi recusandae voluptas. Quidem, nostrum aperiam in quod, sit consequuntur minus dolores consequatur cumque ullam porro cupiditate quisquam hic officia ducimus quibusdam explicabo voluptates debitis reiciendis perferendis. Recusandae, quibusdam.</p>
             </div>
         </section>
 
-        <section id="profile">
+        <section id="profile" class="py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-6 text-bg-dark">
@@ -66,7 +72,7 @@
             </div>
         </section>
 
-        <section id="portofolio">
+        <section id="portofolio" class="py-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-4 border border-primary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, cum.</div>
@@ -75,7 +81,18 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="stats" class="py-5">
+            <div class="container">
+                <div class="row text-bg-danger d-none d-md-block">
+                    <div class="col-12">Ini hanya muncul px medium keatas</div>
+                </div>
+                <div class="row text-bg-warning d-block d-md-none">
+                    <div class="col-12">Ini hanya muncul px extra small - medium</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
